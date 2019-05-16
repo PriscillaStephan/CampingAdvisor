@@ -1,0 +1,181 @@
+html {
+    height: 100%;
+    margin: 0;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.5em;
+    text-transform: none;
+    letter-spacing: 1px;
+    font-family: brandon-grotesque;
+    font-weight: 300;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    position: relative;
+    height: 100% !important;
+    overflow: hidden;
+}
+
+#slider-area {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+
+
+#slider-area .owl-carousel div {
+
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#slider-are .owl-item div {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-width: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+#wrapper #nav-area {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    text-align: center;
+    z-index: 10;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.slider-text {
+    position: absolute;
+    left: 30%;
+    z-index: 10;
+    top: 30%;
+    text-align: center;
+}
+
+.slider-text h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.slider-text p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.slider-text button {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.slider-text .nav {
+    margin-left: 10px;
+    align-self: center;
+}
+
+.slider-text .nav a {
+    text-decoration: underline;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0 5px;
+    margin-bottom: 70px;
+    z-index: 10;
+    text-align: center;
+
+}
+
+
+/*index page*/
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+
+    header video {
+        display: none;
+    }
+}
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+}
